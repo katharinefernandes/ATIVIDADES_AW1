@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="description" content="ATIVIDADE_2_AW1">
+  <meta name="author" content="Katharine Fernandes">
+
+  <title>Formulário de Inscrição</title>
+
+</head>
+
+<body>
+
+  <!--Menu de acesso às outras sessões da atividade, parte interna e home-->
+  <header>
+    <img src="img/logo_news.png" style="width:120px; height:120px">
+    <h2>Menu</h2>
+    <nav>
+      <ul>
+        <li><a href="home.html">Página Inicial</a></li>
+        <li><a href="interna.html">O que é COVID-19?</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Formulário - 5-->
+  <section>
+
+    <h3>Faça seu Cadastro!</h3>
+
+    <form>
+
+      <!--Identificação do usuário-->
+      <!--Campo Login-->
+      <fieldset id="usuario">
+        <legend>Dados Prévios</legend>
+        <!--Campo Login-->
+        <p>
+          <label for="login_id">Login:</label><br>
+          <input type="text" name="name" id="name_id" maxlength="30" placeholder="Digite seu login aqui">
+        </p>
+
+        <!--Campo Senha-->
+        <p>
+          <label for="password_id">Senha*:</label><br>
+          <input type="password" name="password" id="password_id" placeholder="Digite sua senha aqui" required
+            autofocus>
+        </p>
+      </fieldset>
+
+      <!--Identificação do usuário parte 2-->
+      <fieldset id="id_usuario">
+        <legend>Identificação do usuário</legend>
+        <!--Campo Nome-->
+        <p>
+          <label for="nome">Nome*:</label><br>
+          <input type="text" id="nome" name="nome" required><br>
+        </p>
+
+        <!--Campo Data Nascimento-->
+        <p>
+          <label for="date_id">Data de Nascimento*:</label><br>
+          <input type="date" name="data" id="date_id" required>
+        </p>
+
+        <!--Campo Gênero-->
+        <p>
+          <label for="genero_id">Gênero*:</label><br>
+          <input type="radio" name="genero" id="Feminino" required>
+          <label for="Feminino">Feminino</label>
+          <input type="radio" name="genero" id="Masculino" required>
+          <label for="Masculino">Masculino</label>
+          <input type="radio" name="genero" id="prefiro_nao_responder" required>
+          <label for="prefiro_nao_responder">Prefiro não responder</label>
+        </p>
+
+        <!--Campo Telefone Fixo-->
+        <p>
+          <label for="telefone_id">Telefone Fixo:</label><br>
+          <input type="tel" name="telefone" id="telefone_id" placeholder="Digite seu telefone aqui" maxlength="10">
+        </p>
+
+        <!--Campo Celular-->
+        <p>
+          <label for="celular_id">Celular:</label><br>
+          <input type="cel" name="celular" id="celular_id" placeholder="Digite seu telefone aqui" maxlength="12">
+        </p>
+
+        <!--Campo E-mail-->
+        <p>
+          <label for="email_id">E-mail*:</label><br>
+          <input type="email" name="email" id="email_id" placeholder="Digite seu email aqui" required>
+        </p>
+      </fieldset>
+
+      <!--Localização-->
+      <fieldset id="localizacao">
+        <legend>Endereço</legend>
+        <!--Campo Rua-->
+        <p>
+          <label for="rua">Rua:</label><br>
+          <input type="text" id="rua" name="rua" maxlength="60" placeholder="Digite sua rua aqui">
+        </p>
+
+        <!--Campo Número-->
+        <p>
+          <label for="numero">Número:</label><br>
+          <input type="number" id="numero" name="numero" placeholder="Digite o número da sua rua aqui">
+        </p>
+
+        <!--Campo Complemento-->
+        <p>
+          <label for="complemento">Complemento:</label><br>
+          <input type="text" id="complemento" name="complemento" maxlength="20" placeholder="Digite o complemento aqui">
+        </p>
+
+        <!--Campo CEP-->
+        <p>
+          <label for="cep">CEP:</label><br>
+          <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}">
+        </p>
+
+        <!--Campo Cidade-->
+        <p>
+          <label for="cidade_id">Cidade:</label><br>
+          <input type="text" name="cidade" id="cidade_id" list="cidade" placeholder="Insira sua cidade">
+          <datalist id="cidade">
+            <select name="cidade" id="cidade_id">
+              <option value="Mauá" label="Mauá">
+              <option value="Diadema" label="Diadema">
+              <option value="Riberão Pires" label="Riberão Pires">
+              <option value="Rio Grande da Serra" label="Rio Grande da Serra">
+              <option value="São Bernardo do Campo" label="São Bernardo do Campo">
+              <option value="São Caetano do Sul" label="São Caetano do Sul">
+              <option value="Rio Grande da Serra" label="Rio Grande da Serra">
+              <option value="Santo André" label="Santo André">
+              <option value="Rio Grande da Serra" label="Rio Grande da Serra">
+            </select>
+          </datalist>
+        </p>
+
+        <!--Campo UF-->
+        <p>
+          <label for="uf">UF:</label><br>
+          <input type="text" id="uf" name="uf" value="SP" readonly>
+        </p>
+
+      </fieldset>
+
+
+      <!--Comorbidades-->
+      <fieldset id="comorbidades">
+        <legend>Comorbidades</legend>
+
+        <!--Campo hipertensão-->
+        <input type="checkbox" id="hipertensão" name="comorbidade" value="Hipertensão">
+        <label for="hipertensão">Hipertensão</label><br>
+
+        <!--Campo Doença Renal Cronica-->
+        <input type="checkbox" id="id_doenca_renal" name="comorbidade" value="Doença Renal Cronica">
+        <label for="doenca_renal">Doença Renal Cronica</label><br>
+
+        <!--Campo Imunossuprimidos-->
+        <input type="checkbox" id="id_imunossuprimidos" name="comorbidade" value="Imunossuprimidos">
+        <label for="imunossuprimidos">Imunossuprimidos</label><br>
+
+        <!--Campo Anemia Falciforme-->
+        <input type="checkbox" id="id_anemia_falciforme" name="comorbidade" value="Anemia Falciforme">
+        <label for="anemia-falciforme">Anemia Falciforme</label><br>
+
+        <!--Campo Obesidade Mórbida-->
+        <input type="checkbox" id="id_obesidade_morbida" name="comorbidade" value="Obesidade Mórbida">
+        <label for="obesidade-morbida">Obesidade Mórbida</label><br>
+
+        <!--Campo Cirrose Hepatica-->
+        <input type="checkbox" id="id_cirrose_hepatica" name="comorbidade" value="Cirrose Hepatica">
+        <label for="cirrose-hepatica">Cirrose Hepatica</label><br>
+
+      </fieldset>
+
+      <!--Enviar-->
+      <button type="submit" id="button">Enviar</button>
+
+      <!--Limpar-->
+      <input type="reset" value="Limpar">
+
+    </form>
+
+  </section>
+
+  <hr>
+  <footer>
+    <p>© 2021 Katharine Fernandes</p>
+    <ul>
+      <li><a href="mailto:katharinerodrigues2004if@gmail.com">Contato por email</a></li>
+    </ul>
+
+  </footer>
+
+</body>
+
+</html>

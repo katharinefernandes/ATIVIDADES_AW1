@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Exercício_2_Lista_4_AW1">
+    <meta name="author" content="Katharine Fernandes">
+    <meta name="keywords" content="HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Completo</title>
+
+</head>
+
+<body>
+
+    <!--Formulário - 5-->
+    <form>
+        <!--Identificação do usuário-->
+        <fieldset id="id_usuario">
+            <legend>Identificação do usuário</legend>
+            <!--Campo Nome-->
+            <p>
+                <label for="name_id">Nome*:</label><br>
+                <input type="text" name="name" id="name_id" maxlength="30" placeholder="Digite seu nome aqui" required
+                    autofocus>
+            </p>
+
+            <!--Campo Senha-->
+            <p>
+                <label for="password_id">Senha*:</label><br>
+                <input type="password" name="password" id="password_id" placeholder="Digite sua senha aqui" required
+                    autofocus>
+            </p>
+
+            <!--Campo CPF-->
+            <p>
+                <label for="CPF_id">CPF*:</label><br>
+                <input type="number" name="CPF" id="CPF_id" maxlength="11" placeholder="Digite seu CPF aqui" required
+                    autofocus>
+            </p>
+
+            <!--Campo Sexo-->
+            <p>
+                <label for="sexo_id">Sexo:</label><br>
+                <input type="radio" name="sexo" id="Feminino">
+                <label for="Feminino">Feminino</label>
+                <input type="radio" name="sexo" id="Masculino">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="sexo" id="prefiro_nao_responder">
+                <label for="prefiro_nao_responder">Prefiro não responder</label>
+            </p>
+
+            <!--Campo Data Nascimento-->
+            <p>
+                <label for="date_id">Data de Nascimento*:</label><br>
+                <input type="date" name="data" id="date_id" required autofocus>
+            </p>
+
+            <!--Campo Estado Civil-->
+            <p>
+                <label for="estadocivil_id">Estado Civil*:</label><br>
+                <select name="estadocivil" id="estadocivil_id" required autofocus>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select>
+            </p>
+
+            <!--Campo Escolaridade-->
+            <p>
+                <label for="escolaridade_id">Escolaridade:</label><br>
+                <input type="text" name="escolaridade" id="escolaridade_id" list="escolaridade"
+                    placeholder="Insira sua escolaridade">
+                <datalist id="escolaridade">
+                    <select name="escolaridade" id="escolaridade_id">
+                        <option value="Ensino Fundamental Completo" label="Ensino Fundamental Completo">
+                        <option value="Ensino Fundamental Incompleto" label="Ensino Fundamental Incompleto">
+                        <option value="Ensino Fundamental Cursando" label="Ensino Fundamental Cursando">
+                        <option value="Ensino Médio Completo" label="Ensino Médio Completo">
+                        <option value="Ensino Médio Incompleto" label="Ensino Médio Incompleto">
+                        <option value="Ensino Médio Cursando" label="Ensino Médio Cursando">
+                        <option value="Ensino Superior Completo" label="Ensino Superior Completo">
+                        <option value="Ensino Superior Cursando" label="Ensino Superior Cursando">
+                    </select>
+                </datalist>
+            </p>
+
+            <!--Campo Ocupação Principal-->
+            <p>
+                <label for="ocupacao_id">Ocupação Principal:</label><br>
+                <input type="text" name="ocupacao" id="ocupacao_id" placeholder="Digite sua ocupação aqui"
+                    maxlength="150">
+            </p>
+
+            <!--Campo Renda Mensal-->
+            <p>
+                <label for="renda_id">Renda Mensal:</label><br>
+                <input type="number" name="renda" id="renda_id" placeholder="Digite sua renda mensal" maxlength="10">
+            </p>
+
+            <!--Campo Número de Dependentes-->
+            <p>
+                <label for="numerodependentes_id">Número de Dependentes:</label><br>
+                <input type="number" name="numerodependentes" id="numerodependente_id" maxlength="3">
+            </p>
+
+            <!--Campo Telefone-->
+            <p>
+                <label for="telefone_id">Telefone*:</label><br>
+                <input type="tel" name="telefone" id="telefone_id" placeholder="Digite seu telefone aqui" maxlength="12"
+                    required autofocus>
+            </p>
+
+            <!--Campo E-mail-->
+            <p>
+                <label for="email_id">E-mail*:</label><br>
+                <input type="email" name="email" id="email_id" placeholder="Digite seu email aqui" required autofocus>
+            </p>
+        </fieldset>
+
+        <!--Localização-->
+        <fieldset id="localizacao">
+            <legend>Localização</legend>
+            <!--Campo Estado-->
+            <p>
+                <label for="estado_id">Estado*:</label><br>
+                <input type="text" name="estado" id="estado_id" list="estado" placeholder="Insira seu estado" required
+                    autofocus>
+                <datalist id="estado">
+                    <select name="estado" id="estado_id">
+                        <option value="São Paulo" label="São Paulo">
+                        <option value="Minas Gerais" label="Minas Gerais">
+                        <option value="Espírito Santo" label="Espírito Santo">
+                        <option value="Rio de Janeiro" label="Rio de Janeiro">
+                        <option value="Rio Grande do Sul" label="Rio Grande do Sul">
+                        <option value="Santa Catarina" label="Santa Catarina">
+                        <option value="Paraná" label="Paraná">
+                        <option value="Goiás" label="Goiás">
+                        <option value="Mato Grosso" label="Mato Grosso">
+                        <option value="Mato Grosso do Sul" label="Mato Grosso do Sul">
+                        <option value="Distrito Federal" label="Distrito Federal">
+                        <option value="Alagoas" label="Alagoas">
+                        <option value="Bahia" label="Bahia">
+                        <option value="Ceará" label="Ceará">
+                        <option value="Maranhão" label="Maranhão">
+                        <option value="Paraíba" label="Paraíba">
+                        <option value="Pernambuco" label="Pernambuco">
+                        <option value="Piauí" label="Piauí">
+                        <option value="Rio Grande do Norte" label="Rio Grande do Norte">
+                        <option value="Sergipe" label="Sergipe">
+                        <option value="Tocantins" label="Tocantins">
+                        <option value="Pará" label="Pará">
+                        <option value="Amapá" label="Amapá">
+                        <option value="Roraima" label="Roraima">
+                        <option value="Amazonas" label="Amazonas">
+                        <option value="Acre" label="Acre">
+                        <option value="Rondônia" label="Rondônia">
+                    </select>
+                </datalist>
+            </p>
+
+
+            <!--Campo Cidade-->
+            <p>
+                <label for="cidade_id">Cidade*:</label><br>
+                <input type="text" name="cidade" id="cidade_id" list="cidade" placeholder="Insira sua cidade" required
+                    autofocus>
+                <datalist id="cidade">
+                    <select name="cidade" id="cidade_id">
+                        <option value="Mauá" label="Mauá">
+                        <option value="Diadema" label="Diadema">
+                        <option value="Riberão Pires" label="Riberão Pires">
+                        <option value="Rio Grande da Serra" label="Rio Grande da Serra">
+                        <option value="São Bernardo do Campo" label="São Bernardo do Campo">
+                        <option value="São Caetano do Sul" label="São Caetano do Sul">
+                        <option value="Rio Grande da Serra" label="Rio Grande da Serra">
+                        <option value="Santo André" label="Santo André">
+                        <option value="Rio Grande da Serra" label="Rio Grande da Serra">
+                    </select>
+                </datalist>
+            </p>
+
+        </fieldset>
+
+
+        <!--Mensagem do Usuário-->
+        <fieldset id="mensagem_usuario">
+            <legend>Mensagem do Usuário</legend>
+            <!--Campo Grau de Urgência-->
+            <p>
+                <label for="grau_id">Grau de Urgência:</label><br>
+                <select name="grau_urgencia" id="grau_id">
+                    <option value="Grave">Grave</option>
+                    <option value="Mediano">Medio</option>
+                    <option value="leve">Leve</option>
+                </select>
+            </p>
+
+            <!--Campo Mensagem-->
+            <p>
+                <label for="mensage_id">Mensagem*:</label><br>
+                <textarea name="mensage" cols="20" rows="4" id="mansage_id" placeholder="Digite alguma mensagem aqui"
+                    maxlength="100" required autofocus></textarea>
+            </p>
+
+            <!--Campo Reportar Erro-->
+            <p>
+                <label for="report_id">Reportar Erro:</label><br>
+                <input type="file" name="report" id="report_id">
+                <input type="submit" value="Upload">
+            </p>
+
+        </fieldset>
+
+        <!--Enviar-->
+        <button type="submit" id="button">Enviar</button>
+
+        <!--Limpar-->
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+
+</html>

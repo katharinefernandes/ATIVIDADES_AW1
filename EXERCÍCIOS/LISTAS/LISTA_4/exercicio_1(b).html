@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Exercício_1(b)_Lista_4_AW1">
+    <meta name="author" content="Katharine Fernandes">
+    <meta name="keywords" content="HTML">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando campos do formulário</title>
+</head>
+
+<body>
+
+    <!--Formulário - 2-->
+        <form>
+         <!--Agrupamento de campos-->
+            <fieldset id="detalhes">
+                
+            <!--Legenda do Fieldset-->
+                <legend>Detalhes de contato</legend>
+
+                <!--Campo Email-->
+                <p>
+                    <label for="email_id">Email:</label><br>
+                    <input type="email" name="email" id="email_id" size="20" maxlength="40" required autofocus>
+                </p>
+            
+            <!--Campo Celular-->
+                
+            <p>
+                <label for="celular_id">Celular:</label><br>
+                <input type="tel" name="celular" id="celular_id" maxlength="12" required autofocus>
+            </p>
+
+            <!--Campo Telefone-->
+                <p>
+                    <label for="telefone_id">Telefone:</label><br>
+                    <input type="tel" name="telefone" id="telefone_id" maxlength="11" required autofocus>
+                </p>
+
+            <!-- Submeter -->
+                <button type="submit" id="button">Enviar</button>
+
+            </fieldset>
+
+        </form>
+</body>
+</html>
